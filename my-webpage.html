@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>my-webpage.html</title>
-
-    <style>
-       body {
-          background-color: aquamarine;
-       }
-
-       .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-       @media (min-width: 800px) {
-         .header-text {
-            max-width: 35%;
-            float: left;
-         }
-
-         .float-left {
-            float: left;
-         }
-
-         ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-         }
-       }
-    </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>my-webpage.html</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+      .menu {
+         display: flex;
+      }
+      .menu li {
+         list-style: none;
+         margin: 0em;
+         padding: 0em;
+      }
+      .menu a {
+         padding: 0.5em;
+         display: block;
+         width: 6em;
+      }
+      .menu a:hover { 
+         background-color: #5F9E9F;
+      }
+   </style>
 </head>
-<body>
-    <div class="container" style="width: 70%; margin: auto">
-         <div class="header clearfix">
-               <div class="header-text">
-                     <h1>Full Name</h1>
-                     <h1>Last Name</h1>
-               </div>
-               <div class="header-img">
-                  <img src="./dummy-img.png" alt="">
-               </div>
-         </div>
 
-         <div class="main">
-            <div class="city clearfix">
-               <div class="city-img">
-                     <img src="./dummy-img.png" alt="">
+<body>
+      <div class="nav-wrapper">
+            <ul class="menu">
+               <li><a href="#">Menu item 1</a></li>
+               <li><a href="#">Menu item 2</a></li>
+               <li><a href="#">Menu item 3</a></li>
+            </ul>
+         </div>
+   <div class="container">
+      <div class="header">
+         
+         <!-- <div  class="header-content">
+            <div class="header-text">
+                  <h3>Full Name</h3>
+                  <h3>Last Name</h3>
+            </div>
+            <div class="header-img">
+               <img src="./bigimg2.jpg" alt="Header Image">
+            </div>
+         </div> -->
+         <div class="place-content">
+               <div class="place-text">
+                  <h3>The first name</h3>
+                  <h3>The last name</h3>
                </div>
-               <div class="city-text">
-                     <ul>
-                        <li>Lorem Ipsum is simply dummy text of the printing</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing</li>
-                     </ul>
+               <div class="place-img">
+                  <img src="./images/france.jpg" alt="Historic Image">
                </div>
             </div>
+      </div>
 
-            <div class="language">
-               <h1>A foreign language</h1>
-               <table border="1">
+      <div class="main">
+         <div class="city">
+            <h1>Which City</h1>
+            <div class="city-content">
+               <div class="city-img">
+                  <img src="./images/france.jpg" alt="Favorite City Image">
+               </div>
+               <div class="city-text">
+                  <h3>Best Cities to Learn French in Franc</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="language" style="margin-bottom: 20px;;">
+            <h1>A foreign language</h1>
+            <div class="language-content">
+               <h3>French</h3>
+               <table>
                   <thead>
                      <tr>
                         <th>English Phrase</th>
                         <th>Foreign Phrase</th>
                      </tr>
-                     
                   </thead>
                   <tbody>
                      <tr>
-                        <td>1. </td>
-                        <td> </td>
+                        <td>1. Lorem Ipsum is simply dummy text of the printing</td>
+                        <td> Lorem Ipsum is simply dummy text of the printing</td>
                      </tr>
                      <tr>
-                        <td>2. </td>
-                        <td> </td>
+                        <td>2. Lorem Ipsum is simply dummy text of the printing</td>
+                        <td> Lorem Ipsum is simply dummy text of the printing</td>
                      </tr>
                      <tr>
-                        <td>3. </td>
-                        <td> </td>
+                        <td>3. Lorem Ipsum is simply dummy text of the printing</td>
+                        <td> Lorem Ipsum is simply dummy text of the printing</td>
                      </tr>
                      <tr>
-                        <td>4. </td>
-                        <td> </td>
+                        <td>4. Lorem Ipsum is simply dummy text of the printing</td>
+                        <td> Lorem Ipsum is simply dummy text of the printing </td>
                      </tr>
 
                   </tbody>
@@ -95,60 +107,63 @@
                   </tfoot>
                </table>
             </div>
-
-            <div class="places">
+         </div>
+            <div class="places-wrapper">
                <h1>Historic places in Cape Town</h1>
-               <div class="clearfix">
-                  <div class="history-text float-left">
-                     <ul>
+               <div class="places-container">
+                  <div class="place-content">
+                     <div class="place-text">
+                        <h3>District Six Museum</h3>
                         <ul>
-                           <li>Lorem Ipsum is simply dummy text of the printing</li>
-                           <li>Lorem Ipsum is simply dummy text of the printing</li>
-                           <li>Lorem Ipsum is simply dummy text of the printing</li>
+                              <li>Lorem Ipsum is simply dummy text of the printing</li>
+                              <li>Lorem Ipsum is simply dummy text of the printing</li>
+                              <li>Lorem Ipsum is simply dummy text of the printing</li>
                         </ul>
-                     </ul>
+                     </div>
+                     <div class="place-img">
+                        <img src="./images/france.jpg" alt="Historic Image">
+                     </div>
                   </div>
-                  <div class="history-img">
-                     <img src="./dummy-img.png" alt="">
-                  </div>
-               </div>
 
-               <div class="clearfix">
-                  <div class="history-img float-left">
-                     <img src="./dummy-img.png" alt="">
-                  </div>
-                  <div class="history-text">
-                     <ul>
-                        <ul>
-                           <li>Lorem Ipsum is simply dummy text of the printing</li>
-                           <li>Lorem Ipsum is simply dummy text of the printing</li>
-                           <li>Lorem Ipsum is simply dummy text of the printing</li>
-                        </ul>
-                     </ul>
-                  </div>
-               </div>
-
-               <div class="clearfix">
-                     <div class="history-text float-left">
-                        <ul>
+                  <div class="place-content">
+                     <div class="place-text change-order">
+                           <h3>District Six Museum</h3>
                            <ul>
                               <li>Lorem Ipsum is simply dummy text of the printing</li>
                               <li>Lorem Ipsum is simply dummy text of the printing</li>
                               <li>Lorem Ipsum is simply dummy text of the printing</li>
                            </ul>
-                        </ul>
                      </div>
-                     <div class="history-img">
-                        <img src="./dummy-img.png" alt="">
+                     <div class="place-img">
+                           <img src="./images/france.jpg" alt="Historic Image">
                      </div>
                   </div>
+
+                  <div class="place-content">
+                        <div class="place-text">
+                           <h3>District Six Museum</h3>
+                           <ul>
+                              <li>Lorem Ipsum is simply dummy text of the printing</li>
+                              <li>Lorem Ipsum is simply dummy text of the printing</li>
+                              <li>Lorem Ipsum is simply dummy text of the printing</li>
+                           </ul>
+                        </div>
+                        <div class="place-img">
+                           <img src="./images/france.jpg" alt="Historic Image">
+                        </div>
+                  </div>
+               </div>
             </div>
 
             </div>
 
-         </div>
-
-         <div class="footer">
+            <div class="footer">
+                  <ul class="menu">
+                        <li><a href="#" >Menu item 1</a></li>
+                        <li><a href="#" >Menu item 2</a></li>
+                        <li><a href="#" >Menu item 3</a></li>
+                    </ul>
+            </div>
 
          </div>
     </div>

@@ -1,0 +1,41 @@
+body img{
+    width: 100%;   
+}
+
+/* Foreign Language Styles */
+table, td, th {
+    border: 1px solid black;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th {
+    height: 50px;
+}
+td {
+    height: 35px;
+    padding: 0 0 0 5px;
+}
+
+.change-order {
+    order: 2;
+ }
+
+
+@media (min-width: 800px) {
+    
+  
+    /* Favarite Places Styles */
+    .places-container {
+       display: flex;
+    }
+    /* .place-content {
+       margin: 0 2px 5px 2px;
+    } */
+    .change-order {
+       order: unset;
+    } 
+ }
