@@ -1,81 +1,123 @@
 body {
-    background: #DDDDDD;
+    background: #FAFAFA;
+}
+.menu {
+   display: flex;
+}
+.menu li {
+   list-style: none;
+   margin: 0em;
+   padding: 0em;
+}
+.menu a {
+   padding: 0.5em;
+   display: block;
+   width: 6em;
+}
+.menu a:hover { 
+   background-color: #F0EEF0;;
 }
 .container img {
    width: 100%;
 }
-
 .container h1 {
    text-align: center;
 }
-
 ul {
-   margin: 0px 5px 10px 19px;
+   margin: 7px 5px 10px 19px;
    padding: 0;
 } 
-.language-content, .header-content, .city-content, .footer {
-   padding: 0px 0 10px 5px;
-   background-color: cadetblue;
+.city, .language, .places-wrapper, .footer {
+   margin: 30px 0 0 0;
+}
+
+/*Favarite City Styles */
+.city-content {
+   border: 1px solid #F2F2F2;
+   border-bottom: #F2F2F2 solid 3px;
+}
+.city-text {
+   padding-left: 10px;
 }
 
 /* Foreign Language Styles */
 table, td, th {
    border: 1px solid black;
  }
- 
  table {
    border-collapse: collapse;
    width: 100%;
  }
- 
  th {
-   height: 50px;
+   height: 35px;
  }
  td {
    height: 35px;
    padding: 0 0 0 5px;
  }
 
-
 /* Favarite Places Styles */
 .place-content {
-   background-color: cadetblue;
+   /* background-color: cadetblue; */
    display: flex;
    margin: 0 0 5px 0;
+   border: 1px solid #F2F2F2;
+   border-bottom: #F2F2F2 solid 3px;
 }
 .place-text, .place-img {
    flex: 1;
+   padding: 12px 7px 0 7px;
 }
-.place-img {
-   padding: 22px 9px 0 9px;
+.my-img {
+   flex: 1;
 }
-.place-text {
-   padding: 0px 5px 0 5px;
+.name-text {
+   flex: 1;
+   text-align: right;
+   padding-right: 30px;
+   line-height: 0.5;
 }
-
+.name-text h1{
+   text-align: right;
+}
 .change-order {
    order: 2;
 }
 .place-text h3, .language-content h3, .city-text h3{
    text-align: center;
+   margin: 0;
 }
 
 @media (min-width: 800px) {
    .container {
       width: 90%;
       margin: auto;
+      margin-top: 5em;
    }
-
-   /* .nav-wrapper, .header-content, .city-content, .language-content, .footer {
-      background-color: #ffffff;
-   } */
+   .nav-wrapper {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #f5f8fa;
+      border-bottom: 1px solid #cbd6e2;
+   }
+   .my-img {
+      padding: 10px 10px 10px 0;
+   }
 
    /*Favarite City Styles */
    .city-content {
       display: flex;
+      border: 1px solid #F2F2F2;
+      border-bottom: #F2F2F2 solid 3px;
    }
    .city-text, .city-img {
       flex: 1;
+      padding: 10px;
+   }
+   .city, .language, .places-wrapper, .footer {
+      margin: 60px 0 0 0;
    }
 
    /* Favarite Places Styles */
@@ -89,3 +131,5 @@ table, td, th {
       order: unset;
    } 
 }
+
+
