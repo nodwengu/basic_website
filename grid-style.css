@@ -1,3 +1,6 @@
+body{
+    background: #EBEBEB;
+}
 body img{
     width: 100%;   
 }
@@ -39,3 +42,12 @@ td {
        order: unset;
     } 
  }
+
+
+
+
+ .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+ } 
