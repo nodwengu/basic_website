@@ -16,6 +16,7 @@ html, body {
    background-color: #EFEFFE;
    border-bottom: 1px solid #cbd6e2;
    padding: 11px;
+   z-index: 122;
 }
 .menu {
    display: flex;
