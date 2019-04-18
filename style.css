@@ -112,20 +112,6 @@ table, td, th {
    padding: 10px;
  }
 
-
-/* Favarite Places Styles */
-.place-content {
-   background-color: #EFEFFE;
-   display: flex;
-   margin: 0 0 5px 0;
-   border: 1px solid #F2F2F2;
-   border-bottom: 1px solid #cbd6e2;
-}
-.place-text, .place-img {
-   flex: 1;
-   padding: 12px 7px 0 7px;
-}
-
 .name-text {
    flex: 1;
    text-align: right;
@@ -136,16 +122,16 @@ table, td, th {
    text-align: right;
    font-weight: 800;
 }
-.change-order {
+/* .change-order {
    order: 2;
-}
+} */
 .place-text h3, .language-content h3, .city-text h3{
    text-align: center;
    margin: 0;
 }
 
 .places-wrapper, .language, .city {
-   font-size: 22px;
+   font-size: 18px;
 }
 
 li {
@@ -153,10 +139,51 @@ li {
    text-decoration: none;
 }
 
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+/* Historical Places Styles */
+.place-img {
+   float: left;
+   width: 54%;
+   margin: 15px 10px 0px 10px;
+}
+.place-img img {
+   width: 100%;
+}
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+} 
+
+.float-right {
+   float: right;
+}
+
+.place-content {
+   background-color: #EFEFFE;
+   border: 1px solid #F2F2F2;
+   border-bottom: 1px solid #cbd6e2;
+   border-radius: 5px;
+   width: 100%;
+   margin: 0 0 8px 0;
+}
+
+.place-text {
+   overflow: visible;
+    padding: 10px 7px 10px 10px;
+}
+
+
 @media (min-width: 800px) {
    .container {
-      width: 85%;
+      width: 90%;
       margin: auto;
+      margin-top: 5em;
    }
   
    .my-img {
@@ -178,19 +205,37 @@ li {
    }
 
    /* Favarite Places Styles */
-   .places-container {
-      display: flex;
-   }
-   .place-content {
+   .place-img {
+      float: right;
+      width: 50%;
+  }
+
+  .place-img img {
+      width: 100%;
+  }
+
+  .places-container {
+     display: flex;
+  }
+  .place-content {
       margin: 0 2px 5px 2px;
-   }
-   .change-order {
-      order: unset;
-   } 
+      width: 100%;
+  }
 
    .places-wrapper, .language, .city, .intro {
       font-size: 16px;
    }
+
+   .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+
+   /* .floated {
+      float: left; 
+      width: 25%;
+   } */
 }
 
 
