@@ -121,7 +121,7 @@ table, td, th {
 .name-text h1{
    text-align: right;
    font-weight: 800;
-   color: #EFEFFE;
+   color: cyan;
 }
 /* .change-order {
    order: 2;
