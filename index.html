@@ -7,6 +7,29 @@
    <title>my-webpage.html</title>
    <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
+   <style>
+      .pages-link button{
+         width: 100%;
+         padding: 1em;
+         margin: 1em 0 0 0;
+         cursor: pointer;
+         
+      }
+
+      .pages-link button a{
+         text-decoration: none;
+         font-size: 2em;
+      }
+
+      .intro {
+         padding-top: 10em;
+      }
+
+      .header-content {
+         margin: 20px 0 5px 0;
+
+      }
+   </style>
 </head>
 <body>
    <div class="intro">
@@ -30,146 +53,17 @@
          </div> 
       </div>
    </div>
-   <div class="container">
-      <!-- <div class="main" id="the_city"> -->
-         <div class="city" >
-            <h1>Which City</h1>
-            <div class="city-content">
-               <div class="city-img">
-                  <img src="./images/cairo.jpg" alt="Favorite City Image">
-               </div>
-               <div class="city-text">
-                  <h3>Cairo</h3>
-                  <p>Egyptians are friendly, genuine and easygoing, people.</p>
-                  <p>Cairo (Al-Qahira): A city that’s home to the Pyramids, the Sphinx of Giza, the Egyptian National Museum, the beautiful Nile river and shopping in the Khan al Halili Bazaar.</p>
-                  <p>Cairo is a city full of life, traditions, gastronomic surprises and culture. </p>
-                  <p>Primary education is free and compulsory, and university tuition has been free since 1962.</p>
-                  <p>In 1925, Cairo won the title of the most beautiful city in the world, even though European cities like Berlin, Paris and London were also competing.</p>
-               </div>
-            </div>
-         </div>
-         <div class="language" style="margin-bottom: 20px;" id="the_language">
-            <h1>A foreign language</h1>
-            <div class="language-content">
-               <table>
-                  <thead>
-                        <tr>
-                           <td colspan="2"><h3>Arabic</h3></td>
-                        </tr>
-                     <tr>
-                        <th>English Phrase</th>
-                        <th>Foreign Phrase</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>1. Peace be with you</td>
-                        <td> Asalam alaikum</td>
-                     </tr>
-                     <tr>
-                        <td>2. And peace be with you</td>
-                        <td>  Walaikum salam</td>
-                     </tr>
-                     <tr>
-                        <td>3. Hello</td>
-                        <td> Marhaba</td>
-                     </tr>
-                     <tr>
-                        <td>4. Goodbye</td>
-                        <td> Ma-salama </td>
-                     </tr>
-                  </tbody>
-                  <tfoot>
-                  </tfoot>
-               </table>
-            </div>
-         </div>
-            <!-- <div class="places-wrapper" id="the_place">
-               <h1>Historic places in Cape Town</h1>
-               <div class="places-container">
-                  <div class="place-content">
-                     <div class="place-text">
-                        <h3>District Six Museum</h3>
-                        <ul>
-                           <li>Over 60,000 of its inhabitants were forcibly removed during the 1970s by the apartheid regime</li>
-                           <li>Government officials portrayed the area as crime-ridden and dangerous; they claimed that the district was a vice den, full of immoral activities like gambling, drinking, and prostitution</li>
-                           <li>Though these were the official reasons, most residents believed that the government sought the land because of its proximity to the city centre, Table Mountain, and the harbour</li>
-                        </ul>
-                     </div>
-                     <div class="place-img">
-                        <img src="./images/district6.jpg" alt="Historic Image" style="">
-                     </div>
-                  </div>
-                  <div class="place-content">
-                     <div class="place-text change-order">
-                        <h3>City Hall</h3>
-                        <ul>
-                           <li>The building was designed as the result of a public competition and is built from honey-coloured oolitic limestone imported from Bath in England.</li>
-                           <li>On February 11, 1990, only hours after his release from prison, Nelson Mandela made his first public speech after his release from the balcony of Cape Town City Hall.</li>
-                           <li>The City Hall has become a central venue for creative and cultural events such as art exhibitions and concerts.</li>
-                        </ul>
-                     </div>
-                     <div class="place-img">
-                        <img src="./images/cityhall.jpg" alt="Historic Image" style="transform: rotate(90deg);">
-                     </div>
-                  </div>
-                  <div class="place-content">
-                     <div class="place-text">
-                        <h3>Castle of Good Hope</h3>
-                        <ul>
-                           <li>Built by the Dutch East India Company between 1666 and 1679, the Castle is the oldest existing colonial building in South Africa.</li>
-                           <li>During the Second Boer War (1899–1902), part of the castle was used as a prison, and the former cells remain to this day.</li>
-                           <li>The Castle acted as local headquarters for the South African Army in the Western Cape, and today houses the Castle Military Museum and ceremonial facilities for the traditional Cape Regiments.</li>
-                        </ul>
-                     </div>
-                     <div class="place-img">
-                        <img src="./images/goodhope-img.jpg" alt="Historic Image" style="transform: rotate(90deg);">
-                     </div>
-                  </div>
-               </div>
-            </div> -->
+   <div class="container" style="width: 80%;">  
+      <div class="pages-link">
+         <button><a href="https://nodwengu.github.io/basic_website/my-webpage.html">Click to view page created without framework</a></button>
+      </div>
+      <div class="pages-link">
+         <button><a href="https://nodwengu.github.io/basic_website/my-webpage-grid.html">Click to view page created with simplegrid framework</a></button>
+      </div>
 
-            <div class="places-wrapper" id="the_place">
-               <h1>Historic places in Cape Town</h1>
-               <div class="places-container">
-                  <div class="place-content clearfix">
-                     <div class="place-img">
-                        <img src="./images/district6.jpg" alt="Historic Image" style="">
-                     </div>
-                     <div class="place-text" style="overflow: visible">
-                        <h3>District Six Museum</h3>
-                        <p>Over 60,000 of its inhabitants were forcibly removed during the 1970s by the apartheid regime.</p>
-                        <p>Government officials portrayed the area as crime-ridden and dangerous; they claimed that the district was a vice den, full of immoral activities like gambling, drinking, and prostitution.</p>
-                        <p>Though these were the official reasons, most residents believed that the government sought the land because of its proximity to the city centre, Table Mountain, and the harbour.</p>
-                     </div>
-                  </div>
-                  <div class="place-content clearfix">
-                     <div class="place-img float-right">
-                        <img src="./images/cityhall.jpg" alt="Historic Image" style="transform: rotate(90deg);">
-                     </div>
-                     <div class="place-text" style="overflow: visible">
-                        <h3>City Hall</h3>
-                        <p>The building was designed as the result of a public competition and is built from honey-coloured oolitic limestone imported from Bath in England.</p>
-                        <p>On February 11, 1990, only hours after his release from prison, Nelson Mandela made his first public speech after his release from the balcony of Cape Town City Hall.</p>
-                        <p>The City Hall has become a central venue for creative and cultural events such as art exhibitions and concerts.</p>
-                     </div>
-                  </div>
-                  <div class="place-content clearfix">
-                     <div class="place-img">
-                        <img src="./images/goodhope-img.jpg" alt="Goodhope Image" style="transform: rotate(90deg);">
-                     </div>
-                     <div class="place-text" style="overflow: visible">
-                        <h3>Castle of Good Hope</h3>
-                        <p>Built by the Dutch East India Company between 1666 and 1679, the Castle is the oldest existing colonial building in South Africa.</p>
-                        <p>During the Second Boer War (1899–1902), part of the castle was used as a prison, and the former cells remain to this day.</p>
-                        <p>The Castle acted as local headquarters for the South African Army in the Western Cape, and today houses the Castle Military Museum and ceremonial facilities for the traditional Cape Regiments.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         <div class="footer">
-               <p>Copyright © 2019</p>
-         </div>
+      <div class="footer">
+            <p>Copyright © 2019</p>
+      </div>
    </div>  
 </body>
 </html>

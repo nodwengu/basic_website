@@ -63,7 +63,7 @@ ul {
 
 .my-img img {
    border-radius: 59%;
-    width: 200px;
+   width: 200px;
 
 }
 .my-img {
@@ -174,7 +174,7 @@ li {
 }
 
 .place-text {
-   overflow: visible;
+      overflow: visible;
     padding: 10px 7px 10px 10px;
 }
 
@@ -204,7 +204,7 @@ li {
       margin: 60px 0 0 0;
    }
 
-   /* Favarite Places Styles */
+   /* Historical Places Styles */
    .place-img {
       float: right;
       width: 50%;
@@ -231,11 +231,6 @@ li {
       clear: both;
       display: table;
    }
-
-   /* .floated {
-      float: left; 
-      width: 25%;
-   } */
 }
 
 
