@@ -5,35 +5,35 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>My Web Page Grid</title>
-      <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+      <!-- <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet"> -->
       <link rel="stylesheet" href="./simple-grid.min.css">
       <link rel="stylesheet" href="grid-style.css">
    </head>
    <body>
 
-   <div class="row container-fluid intro">
-      <div class="col-12 nav-wrapper">
-            <ul class="menu">
-                  <li><a href="https://nodwengu.github.io/basic_website">Home</a></li>
-                  <li><a href="#the_city">City</a></li>
-                  <li><a href="#the_language">Language</a></li>
-                  <li><a href="#the_place">History</a></li>
-               </ul>
+   <div class="container-fluid intro">
+      <div class="row nav-wrapper">
+         <div class="col-12 menu">
+            <a href="https://nodwengu.github.io/basic_website">Home</a>
+            <a href="#the_city">City</a>
+            <a href="#the_language">Language</a>
+            <a href="#the_place">History</a>
+         </div>
       </div>
       <div class="row header-content">
-            <div class="col-3">
-                 
-            </div>
-            <div class="col-3 name-text">
-               <h1>Thando</h1>
-               <h1>Nodwengu</h1>
-            </div>
-            <div class="col-3 my-img">
-               <img src="./images/thandu2.jpg" alt="Historic Image">
-            </div>
-            <div class="col-2 name-text">
-                 
-               </div>
+         <div class="col-3">
+               
+         </div>
+         <div class="col-3 name-text">
+            <h1>Thando</h1>
+            <h1>Nodwengu</h1>
+         </div>
+         <div class="col-3 my-img">
+            <img src="./images/thandu2.jpg" alt="Historic Image">
+         </div>
+         <div class="col-3">
+               
+         </div>
       </div> 
    </div>
 
@@ -54,40 +54,39 @@
       </div>
 
       <div class="row content" id="the_language">
-        
          <div class="col-12">
-               <h1 class="center">A foreign language</h1>
-         <table>
-            <thead>
+            <h1 class="center">A foreign language</h1>
+            <table>
+               <thead>
+                     <tr>
+                        <td colspan="2"><h3 class="center">Arabic</h3></td>
+                     </tr>
                   <tr>
-                     <td colspan="2"><h3 class="center">Arabic</h3></td>
+                     <th>English Phrase</th>
+                     <th>Foreign Phrase</th>
                   </tr>
-               <tr>
-                  <th>English Phrase</th>
-                  <th>Foreign Phrase</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>1. Peace be with you</td>
-                  <td> Asalam alaikum</td>
-               </tr>
-               <tr>
-                  <td>2. And peace be with you</td>
-                  <td>  Walaikum salam</td>
-               </tr>
-               <tr>
-                  <td>3. Hello</td>
-                  <td> Marhaba</td>
-               </tr>
-               <tr>
-                  <td>4. Goodbye</td>
-                  <td> Ma-salama </td>
-               </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-         </table>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>1. Peace be with you</td>
+                     <td> Asalam alaikum</td>
+                  </tr>
+                  <tr>
+                     <td>2. And peace be with you</td>
+                     <td>  Walaikum salam</td>
+                  </tr>
+                  <tr>
+                     <td>3. Hello</td>
+                     <td> Marhaba</td>
+                  </tr>
+                  <tr>
+                     <td>4. Goodbye</td>
+                     <td> Ma-salama </td>
+                  </tr>
+               </tbody>
+               <tfoot>
+               </tfoot>
+            </table>
          </div>
       </div>
 
@@ -95,14 +94,14 @@
          <h1 class="center">Historic places in Cape Town</h1>
          <div class="col-4 clearfix">
             <div class="place-img">
-                  <img src="./images/district6.jpg" alt="Historic Image" style="">
-               </div>
-               <div class="place-text" style="overflow: visible">
-                     <h3>District Six Museum</h3>
-                     <p>Over 60,000 of its inhabitants were forcibly removed during the 1970s by the apartheid regime.</p>
-                     <p>Government officials portrayed the area as crime-ridden and dangerous; they claimed that the district was a vice den, full of immoral activities like gambling, drinking, and prostitution.</p>
-                     <p>Though these were the official reasons, most residents believed that the government sought the land because of its proximity to the city centre, Table Mountain, and the harbour.</p>
-               </div>
+               <img src="./images/district6.jpg" alt="Historic Image" style="">
+            </div>
+            <div class="place-text" style="overflow: visible">
+               <h3>District Six Museum</h3>
+               <p>Over 60,000 of its inhabitants were forcibly removed during the 1970s by the apartheid regime.</p>
+               <p>Government officials portrayed the area as crime-ridden and dangerous; they claimed that the district was a vice den, full of immoral activities like gambling, drinking, and prostitution.</p>
+               <p>Though these were the official reasons, most residents believed that the government sought the land because of its proximity to the city centre, Table Mountain, and the harbour.</p>
+            </div>
          </div>
             
          <div class="col-4 clearfix">
@@ -110,34 +109,33 @@
                   <img src="./images/cityhall.jpg" alt="Historic Image" style="transform: rotate(90deg);">
             </div>
             <div class="place-text" style="overflow: visible">
-                  <h3>City Hall</h3>
-                  <p>The building was designed as the result of a public competition and is built from honey-coloured oolitic limestone imported from Bath in England.</p>
-                  <p>On February 11, 1990, only hours after his release from prison, Nelson Mandela made his first public speech after his release from the balcony of Cape Town City Hall.</p>
-                  <p>The City Hall has become a central venue for creative and cultural events such as art exhibitions and concerts.</p>
+               <h3>City Hall</h3>
+               <p>The building was designed as the result of a public competition and is built from honey-coloured oolitic limestone imported from Bath in England.</p>
+               <p>On February 11, 1990, only hours after his release from prison, Nelson Mandela made his first public speech after his release from the balcony of Cape Town City Hall.</p>
+               <p>The City Hall has become a central venue for creative and cultural events such as art exhibitions and concerts.</p>
             </div>
          </div>
             <div class="col-4 clearfix">
                <div class="place-img">
-                     <img src="./images/goodhope-img.jpg" alt="Goodhope Image" style="transform: rotate(90deg);">
+                  <img src="./images/goodhope-img.jpg" alt="Goodhope Image" style="transform: rotate(90deg);">
                </div>
                <div class="place-text" style="overflow: visible">
-                     <h3>Castle of Good Hope</h3>
-                     <p>Built by the Dutch East India Company between 1666 and 1679, the Castle is the oldest existing colonial building in South Africa.</p>
-                     <p>During the Second Boer War (1899–1902), part of the castle was used as a prison, and the former cells remain to this day.</p>
-                     <p>The Castle acted as local headquarters for the South African Army in the Western Cape, and today houses the Castle Military Museum and ceremonial facilities for the traditional Cape Regiments.</p>
+                  <h3>Castle of Good Hope</h3>
+                  <p>Built by the Dutch East India Company between 1666 and 1679, the Castle is the oldest existing colonial building in South Africa.</p>
+                  <p>During the Second Boer War (1899–1902), part of the castle was used as a prison, and the former cells remain to this day.</p>
+                  <p>The Castle acted as local headquarters for the South African Army in the Western Cape, and today houses the Castle Military Museum and ceremonial facilities for the traditional Cape Regiments.</p>
                </div>
             </div>
          </div>
       </div>
-   </div>
 
    <div class="container">
-         <div class="row footer">
-               <div class="col-12">
-                  <p>Copyright © 2019</p>
-               </div>
-            </div>
+      <div class="row footer">
+         <div class="col-12">
+            <p>Copyright © 2019</p>
+         </div>
+      </div>
    </div>
 
-   </body>
+</body>
 </html>

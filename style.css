@@ -1,6 +1,5 @@
 
 html, body {
-   /* max-width: 100%; */
    overflow-x: hidden;
    background: #FAFAFA;
    scroll-behavior: smooth;
@@ -21,63 +20,51 @@ html, body {
 .menu {
    display: flex;
    justify-content: center;
+   margin: 0 15px 0 0px;
 }
-.menu li {
-   list-style: none;
-   margin: 0em;
-   padding: 0em;
-}
+
 .menu a {
    padding: 0.5em;
    display: block;
    width: 6em;
+   text-decoration: none;
+   font-size: 21px;
+   text-align: center;
 }
 .menu a:hover { 
-   background-color: #F0EEF0;;
+   background-color: #fff;
 }
 .header-content {
    display: flex;
    margin: 100px 0 5px 0;
-   align-items: center;
-  justify-content: center;
 }
 .container {
-   /* margin-top: 20%; */
    margin: 10px 0 0 0;
-
 }
 .container img {
    width: 100%;
-
 }
 .container h1 {
    text-align: center;
 }
-ul {
-   margin: 7px 5px 10px 19px;
-   padding: 0;
-} 
 .city, .language, .places-wrapper, .footer {
    margin: 30px 0 0 0;
 }
-
 .my-img img {
    border-radius: 59%;
-   width: 200px;
-
+   width: 150px;
 }
 .my-img {
    flex: 1;
 }
-
 .intro {
-   background: url(./images/table2.jpg);
+    background: url(./images/table2.jpg);
     background-size: cover;
     padding-bottom: 2em;
     padding-top: 5em;
 }
 
-/*Favarite City Styles */
+/*City Styles */
 .city-content {
    background-color: #EFEFFE;
    border: 1px solid #F2F2F2;
@@ -123,21 +110,13 @@ table, td, th {
    font-weight: 800;
    color: cyan;
 }
-/* .change-order {
-   order: 2;
-} */
+
 .place-text h3, .language-content h3, .city-text h3{
    text-align: center;
    margin: 0;
 }
-
 .places-wrapper, .language, .city {
    font-size: 18px;
-}
-
-li {
-   padding-bottom: 12px;
-   text-decoration: none;
 }
 
 .clearfix::after {
@@ -164,7 +143,6 @@ li {
 .float-right {
    float: right;
 }
-
 .place-content {
    background-color: #EFEFFE;
    border: 1px solid #F2F2F2;
@@ -173,12 +151,10 @@ li {
    width: 100%;
    margin: 0 0 8px 0;
 }
-
 .place-text {
-      overflow: visible;
+   overflow: visible;
     padding: 10px 7px 10px 10px;
 }
-
 
 @media (min-width: 800px) {
    .container {
@@ -191,7 +167,11 @@ li {
       padding: 10px 10px 10px 0;
    }
 
-   /*Favarite City Styles */
+   .my-img img {
+      width: 200px;
+   }
+
+   /*Favorite City Styles */
    .city-content {
       display: flex;
       border: 1px solid #F2F2F2;
